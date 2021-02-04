@@ -6,7 +6,7 @@ import Paper from "@material-ui/core/Paper";
 function TodoForm({ addTodo }) {
     const [value, handleChange, reset ] = useInputState("");
     return (
-        <Paper>
+        <Paper style={{ margin: "1rem", padding: "0 1rem"}}> 
             <form onSubmit={e => {
                 e.preventDefault();
                 addTodo(value);
@@ -14,7 +14,11 @@ function TodoForm({ addTodo }) {
             }}>
             <TextField 
             value={value}
-             onChange={handleChange}/>
+             onChange={handleChange}
+             margin="normal"
+             label="Add New Todo"
+             fullWidth
+             />
              </form>
         </Paper>
     )
