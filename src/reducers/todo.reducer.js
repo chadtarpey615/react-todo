@@ -21,8 +21,7 @@ const reducer = (state, action) => {
             return state;
     }
 }
-// {type:"ADD", task: "Walk the dog"}
-// {type:"REMOVE", id: 3535}
+
 
 
 
